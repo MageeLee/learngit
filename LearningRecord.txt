@@ -37,3 +37,15 @@ git add命令实际上就是把要提交的所有修改放到暂存区(Stage)，
 git checkout -- readmi.txt  把文件在工作区的修改全部撤销
 							总之，就是让这个文件回到最近一次git commit或git add时的状态。
 git reset HEAD file 将暂存区的文件修改回退到工作区
+
+七、删除文件
+git rm file 从版本库中删除文件
+git checkout -- file 从版本库中恢复文件
+
+八、远程仓库
+创建SSH Key
+登陆GitHub
+
+九、添加远程库
+$ git remote add origin git@github.com:michaelliao/learngit.git  已有的本地仓库与之关联
+$ git push -u origin master 把本地库的所有内容推送到远程库上
