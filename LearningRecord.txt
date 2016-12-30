@@ -1,0 +1,26 @@
+Git学习记录
+一、创建版本库
+mkdir 创建文件夹
+touch 新建文件
+vi 文件名 编辑文件
+git init初始化Git仓库
+
+添加文件到Git仓库
+ 1.git add xx 可反复使用，添加多个文件
+ 2.git commit xx 提交文件。-m "xxx" 本次提交说明
+
+二、时光机穿梭
+git status 查看结果 仓库当前状态
+git diff xx 查看difference  按Q退出
+ 
+三、版本回退
+git log 显示从最近到最远的提交日志  git log --pretty=oneline
+git reset --hard HEAD^  在Git中， HEAD表当前版本,上个版本就是HEAD^，
+						上上个版本就是HEAD^^，当然往上100个版本写100个^较容易数不过来，
+						 所以写成HEAD~100.
+git reset --hard commit_id 根据id换版本 
+git reflog 记录每一次命令
+git log 查看提交历史
+
+四、工作区和暂存区
+ 作区(Working Directory):就是你在电脑里能看到的目录，比如我的learngit文件夹就是一个工作区
