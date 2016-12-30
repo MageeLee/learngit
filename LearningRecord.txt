@@ -32,3 +32,8 @@ git add命令实际上就是把要提交的所有修改放到暂存区(Stage)，
 
 五、管理修改
 每次修改，如果不add到暂存区，那就不会加入到commit中。
+
+六、撤销修改
+git checkout -- readmi.txt  把文件在工作区的修改全部撤销
+							总之，就是让这个文件回到最近一次git commit或git add时的状态。
+git reset HEAD file 将暂存区的文件修改回退到工作区
